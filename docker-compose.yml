@@ -1,7 +1,8 @@
 version:  '3'
 services:
   datascience-notebook:
-      image:    jupyter/datascience-notebook
+      image:    alexming2020/datascience-notebook
+      build:    .
       volumes:
         - ${LOCAL_WORKING_DIR}:/home/jovyan/work
         - ${LOCAL_DATASETS}:/home/jovyan/work/datasets
